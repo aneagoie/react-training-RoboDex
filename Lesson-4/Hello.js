@@ -7,6 +7,6 @@ const Hello = (props) => {
       <div>Welcome to {props.company}</div>
     </div>
   );
-}
+};
 
 export default Hello;
