@@ -1,5 +1,5 @@
 {
-  "name": "react-training-contactsApp",
+  "name": "react-training-RoboDex",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -9,7 +9,7 @@
     "fetch": "^1.1.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "semistandard": "^9.2.1"
+    "tachyons": "^4.6.1"
   },
   "scripts": {
     "start": "react-scripts start",

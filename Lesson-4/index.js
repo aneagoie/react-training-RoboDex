@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; //glue between React and the DOM
-import App from './App';
+import CardList from './CardList';
 import './index.css';
 import { robots } from './robots';
 
 ReactDOM.render(
-  <App robots={robots}/>,
+  <div>
+    <CardList robots={robots}/>
+  </div>,
   document.getElementById('root')
 );

@@ -2,20 +2,6 @@
   text-align: center;
 }
 
-@font-face {
-font-family: 'SEGA LOGO FONT';
-font-style: normal;
-font-weight: normal;
-src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
-}
-
-h1 {
-  font-family: 'SEGA LOGO FONT';
-  color: red;
-  font-weight: 100;
-  font-size: 50px;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
