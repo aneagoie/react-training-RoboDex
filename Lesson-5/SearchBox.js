@@ -3,10 +3,10 @@ import React from 'react';
 const SearchBox = (props) => {
   const { onSearchChange } = props;
   return (
-    <div className='mw6 center'>
-      <input
+    <div className='pa2'>
+      <input className='pa2'
         type='search'
-        placeholder='search robots...'
+        placeholder='search Robots...'
         onChange={onSearchChange}
       />
     </div>

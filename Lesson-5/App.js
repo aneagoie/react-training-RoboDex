@@ -22,8 +22,8 @@ class App extends Component {
     );
     return (
       <div>
-      <SearchBox onSearchChange={this.onSearchChange}/>
-      <CardList robots={filteredRobots} />
+        <SearchBox onSearchChange={this.onSearchChange}/>
+        <CardList robots={filteredRobots} />
       </div>
     );
   }

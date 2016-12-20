@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
+import CardList from '../Components/CardList';
+import SearchBox from '../Components/SearchBox';
+import { apiCall } from '../api/api';
 // import { robots } from './robots';
-import Scroll from './Scroll';
+import Scroll from '../Components/Scroll';
 
 class App extends Component {
   constructor() {
@@ -15,18 +16,19 @@ class App extends Component {
     }
   }
   componentWillMount() {
-    fetch('https://jsonplaceholder.typicode.com/users').then(response =>
-      response.json().then(data =>
+    apiCall('https://jsonplaceholder.typicode.com/users')
+      .then(response =>
         this.setState({
-          robots: data,
+          robots: response,
           isPending: false
         })
       )
-    )
   }
+
   onSearchChange = (evt) => {
     this.setState({searchTerm: evt.target.value})
   }
+
   render() {
     const { searchTerm, robots, isPending } = this.state;
     const filteredRobots = robots.filter(robot =>
