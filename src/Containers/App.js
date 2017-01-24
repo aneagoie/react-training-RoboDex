@@ -3,13 +3,16 @@ import "./App.css";
 import CardList from "../Components/CardList";
 import SearchBox from "../Components/SearchBox";
 import { apiCall } from "../api/api";
-// import { robots } from './robots';
 import Scroll from "../Components/Scroll";
 
 class App extends Component {
   constructor() {
     super();
-    this.state = { searchTerm: "", robots: [], isPending: true };
+    this.state = {
+      searchTerm: "",
+      robots: [],
+      isPending: true
+    };
   }
   componentWillMount() {
     apiCall("https://jsonplaceholder.typicode.com/users").then(

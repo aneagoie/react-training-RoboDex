@@ -21,7 +21,8 @@ class App extends Component {
       robot.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     return (
-      <div>
+      <div className='tc'>
+        <h1>RoboDex</h1>
         <SearchBox onSearchChange={this.onSearchChange}/>
         <CardList robots={filteredRobots} />
       </div>
