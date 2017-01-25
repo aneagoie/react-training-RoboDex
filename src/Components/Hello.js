@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const Hello = props => {
+const Hello = (props) => {
   return (
-    <div className="f1 tc">
+    <div className='f1 tc'>
       <div>Hello World</div>
-      <div>Welcome to{props.company}</div>
+      <div>Welcome to {props.company}</div>
     </div>
   );
 };
 
-export default Hello
+export default Hello;
