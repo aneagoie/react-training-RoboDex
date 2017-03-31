@@ -14,7 +14,7 @@ class App extends Component {
       isPending: true
     }
   }
-  componentWillMount() {
+  componentDidMount() {
     apiCall('https://jsonplaceholder.typicode.com/users')
       .then(response =>
         this.setState({
